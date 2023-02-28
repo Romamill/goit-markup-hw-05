@@ -57,7 +57,6 @@ header {
 .header-conteiner {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 .header-nav {
   display: flex;
@@ -92,6 +91,7 @@ img {
 }
 
 .header-link {
+  display: block;
   color: var(--color-brand);
   font-weight: 500;
   font-size: 16px;
@@ -178,13 +178,12 @@ img {
   padding: 16px 32px;
   margin-left: auto;
   margin-right: auto;
-  transition-property: color, background-color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-hero:hover,
 .button-hero:focus {
-  color: var(--color-secondary);
   background-color: var(--color-ocean);
 }
 /* features */
@@ -317,7 +316,6 @@ img {
 .customers-link:focus .customers-icon {
   border-color: var(--color-ocean);
   fill: var(--color-ocean);
-  outline-color: var(--color-ocean);
 }
 
 /* Footer */
@@ -402,6 +400,7 @@ footer {
   background-color: rgba(46, 47, 66, 0.4);
   padding: 20px 0;
   transition: opacity 500ms, visibility 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
